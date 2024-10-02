@@ -5,7 +5,7 @@ jobs:
         runs-on: ubuntu-latest
         defaults:
             run:
-                working-directory: 04-using-actions/reach-app
+                working-directory: 04-using-actions/react-app
         steps:
             - name: Checkout Code
               uses: actions/checkout@v4
@@ -15,10 +15,10 @@ jobs:
                 node-version: '20.x'
             - name: Install Dependencies
               run: npm ci
-            #   working-directory: 04-using-actions/reach-app
+            #   working-directory: 04-using-actions/react-app
             - name: Run Unit Tests
               run: npm test
-            #   working-directory: 04-using-actions/reach-app
+            #   working-directory: 04-using-actions/react-app
 
         #Checkout the code from the repository
         #Install deps of our reach application
